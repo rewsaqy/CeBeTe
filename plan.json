@@ -1,0 +1,109 @@
+{
+  "project": "CoD-Style Dialogue & Subtitle System",
+  "version": "1.0",
+  "constraints": {
+    "voiceover": false,
+    "localization": false,
+    "language": "en-US",
+    "engine": "Unity 6",
+    "gameplay_blocking": false
+  },
+  "core_behavior": {
+    "description": "Non-blocking subtitle system. Lines appear at the bottom of the screen, timed by estimated reading duration, queued and arbitrated by priority. Gameplay never pauses.",
+    "reading_speed_formula": {
+      "base_duration_seconds": 1.0,
+      "seconds_per_character": 0.06,
+      "min_duration_seconds": 1.5,
+      "max_duration_seconds": 6.0
+    }
+  },
+  "data_model": {
+    "DialogueLine": {
+      "id": "string",
+      "speakerId": "string",
+      "text": "string",
+      "priority": "enum(Story, Radio, Ambient)",
+      "durationOverrideSeconds": "float|null",
+      "expiresAfterSeconds": "float",
+      "resumableIfInterrupted": "bool"
+    },
+    "Speaker": {
+      "id": "string",
+      "displayName": "string",
+      "nameColorHex": "string"
+    },
+    "DialogueSequence": {
+      "id": "string",
+      "lines": ["DialogueLine.id"],
+      "gapBetweenLinesSeconds": "float",
+      "onCompleteEventId": "string|null"
+    }
+  },
+  "queue_rules": {
+    "priority_order": ["Story", "Radio", "Ambient"],
+    "interrupt_policy": "higher_priority_interrupts_lower",
+    "equal_or_lower_priority": "enqueue_with_expiry",
+    "expired_lines": "dropped_silently",
+    "interrupted_line_behavior": "configurable_per_line: drop | requeue_if_resumable"
+  },
+  "presentation": {
+    "subtitle_view": {
+      "position": "bottom_center",
+      "max_lines_visible": 2,
+      "max_width_percent_of_screen": 60,
+      "fade_in_seconds": 0.15,
+      "fade_out_seconds": 0.15,
+      "speaker_prefix_format": "{SpeakerName}: {Text}",
+      "speaker_prefix_color_source": "Speaker.nameColorHex"
+    },
+    "title_card": {
+      "reveal_mode": "typewriter_time_based",
+      "characters_per_second": 18,
+      "skippable": true,
+      "skip_input": "hold_button"
+    }
+  },
+  "gameplay_integration": {
+    "trigger_sources": ["trigger_volume", "scripted_event", "radio_call", "sequence_step"],
+    "api_surface": {
+      "PlayLine(lineId, priority)": "enqueues or interrupts based on queue_rules",
+      "PlaySequence(sequenceId)": "plays an ordered list of lines with gaps",
+      "CancelLine(lineId)": "removes a queued or active line",
+      "CancelAll()": "clears queue and active line"
+    },
+    "events_published": ["DialogueStarted", "DialogueEnded", "DialogueInterrupted", "SequenceCompleted"]
+  },
+  "player_settings": {
+    "subtitles_enabled": "bool, default true",
+    "text_size": "enum(Small, Medium, Large)",
+    "background_opacity": "float 0-1",
+    "reading_speed_multiplier": "enum(Slow=1.3, Normal=1.0, Fast=0.75)",
+    "persistence": "versioned local settings file"
+  },
+  "performance_requirements": {
+    "zero_gc_alloc_while_line_visible": true,
+    "no_per_frame_text_rebuild": true,
+    "pooled_subtitle_ui_elements": true
+  },
+  "build_phases": [
+    "Queue & priority system (engine-agnostic, unit testable)",
+    "Text-based timing calculation",
+    "Subtitle view (fade, wrap, speaker color)",
+    "Title card typewriter",
+    "Gameplay triggers & sequences",
+    "Player settings & reading speed",
+    "Testing & performance profiling"
+  ],
+  "test_scenarios": [
+    "High priority line interrupts active ambient line",
+    "Queued line expires before it can play",
+    "Multiple lines enqueued simultaneously, correct ordering",
+    "Sequence plays start to finish with gaps",
+    "Reading speed multiplier changes active line duration",
+    "No GC spike across 1000 play/cancel cycles"
+  ],
+  "open_questions": [
+    "Should interrupted Story-priority lines ever auto-resume, or always drop?",
+    "Is branching/choice-based dialogue planned for a future version? (affects whether to abstract the line source now)"
+  ]
+}

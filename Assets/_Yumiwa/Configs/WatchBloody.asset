@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed2c63ccd6040eb99420b2e1180227e, type: 3}
+  m_Name: WatchBloody
+  m_EditorClassIdentifier: Yumiwa.Infrastructure::Yumiwa.Infrastructure.ItemData
+  ItemId: watch_bloody
+  DisplayName: Jam Tangan Berdarah
+  Description: Jam berhenti 23:47, noda darah, ukiran A.T.
+  Icon: {fileID: 0}
+  InspectionPrefab: {fileID: 4721030523296776581, guid: 0feec1253b3a7fc4fa6524f7b697f3ac, type: 3}
+  Quantity: 1
+  Kind: 1
+  IsObjectiveItem: 1
+  LinkedEvidence: {fileID: 11400000, guid: 925fa9bd13b4f624db1ac85ee62a437a, type: 2}
+  Hotspots:
+  - {fileID: 11400000, guid: 6799647476377dc49b11dba8c5b156e6, type: 2}
+  - {fileID: 11400000, guid: 6714de8a1569b5d40b5a050daef1eccc, type: 2}
+  - {fileID: 11400000, guid: 9e7377486484a71428c239b07c39b7c1, type: 2}

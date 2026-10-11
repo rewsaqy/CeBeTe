@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a38dac0a74ce4048a51edfd6476c31c, type: 3}
+  m_Name: Call_Seq_InspectorCall
+  m_EditorClassIdentifier: Yumiwa.Infrastructure::Yumiwa.Infrastructure.DialogueSequenceAsset
+  SequenceId: seq_inspector_call
+  LineIds:
+  - call_l1
+  - call_j1
+  - call_l2
+  - call_j2
+  - call_l3
+  - call_j3
+  - call_l4
+  GapBetweenLinesSeconds: 0.8
+  OnCompleteEventId: inspector_call_done

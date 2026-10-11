@@ -1,0 +1,22 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "unity": {
+      "type": "local",
+      "command": ["node", ".opencode/mcp/unity-mcp-server/src/index.js"],
+      "enabled": true,
+      "environment": {
+        "UNITY_BRIDGE_HOST": "127.0.0.1",
+        "UNITY_BRIDGE_PORT": "7891"
+      },
+      "timeout": 10000
+    },
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp"
+    }
+  },
+  "tools": {
+    "unity_*": true
+  }
+}

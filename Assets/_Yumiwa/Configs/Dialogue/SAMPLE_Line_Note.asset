@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fab6a4182566c64bb7e8acfaee8b153, type: 3}
+  m_Name: SAMPLE_Line_Note
+  m_EditorClassIdentifier: Yumiwa.Infrastructure::Yumiwa.Infrastructure.DialogueLineAsset
+  LineId: sample_note
+  SpeakerId: james
+  Text: Someone tried to make this look random. It isn't.
+  Priority: 0
+  DurationOverrideSeconds: 0
+  ExpiresAfterSeconds: 0
+  ResumableIfInterrupted: 0

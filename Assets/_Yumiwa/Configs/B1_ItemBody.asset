@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed2c63ccd6040eb99420b2e1180227e, type: 3}
+  m_Name: B1_ItemBody
+  m_EditorClassIdentifier: Yumiwa.Infrastructure::Yumiwa.Infrastructure.ItemData
+  ItemId: b1_body
+  DisplayName: Tubuh Korban
+  Description: Korban pria sekitar 50 tahun di gang basah.
+  Icon: {fileID: 0}
+  InspectionPrefab: {fileID: 3513852576665958960, guid: 233e91ef42469be4a97875b8a4266d14, type: 3}
+  Quantity: 1
+  Kind: 1
+  IsObjectiveItem: 0
+  LinkedEvidence: {fileID: 11400000, guid: fa70b1b9c0c8afa4c903cd8b38597b0c, type: 2}
+  Hotspots:
+  - {fileID: 11400000, guid: a5dcfde940c3ad34ab4c19ff12f1da73, type: 2}

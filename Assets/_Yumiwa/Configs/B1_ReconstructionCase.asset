@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc560351b25dc08418763cf9cde44051, type: 3}
+  m_Name: B1_ReconstructionCase
+  m_EditorClassIdentifier: Yumiwa.Infrastructure::Yumiwa.Infrastructure.ReconstructionCaseAsset
+  CaseId: case_b1
+  Title: Jejak Darah Pertama
+  RequiredEvidenceIds:
+  - b1_body
+  - b1_scratch
+  - b1_blood
+  MinHotspotsPerEvidence: 1
+  OptionIds:
+  - opt_panic
+  - opt_robbery
+  - opt_pro
+  OptionTexts:
+  - Pelaku panik, kehilangan kendali, lalu kabur terburu-buru.
+  - Perampokan terencana yang berjalan rapi.
+  - Pelaku profesional yang tidak meninggalkan jejak.
+  CorrectOptionId: opt_panic
+  Deduction: {fileID: 11400000, guid: 587f0458762d88e4aad0b2a1ed67717a, type: 2}

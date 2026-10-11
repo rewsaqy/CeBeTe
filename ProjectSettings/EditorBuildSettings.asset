@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PunyaPandu.unity
+    guid: 2c8ee7187fd8af94eb3e22ab862e01cc
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/_Yumiwa/Archive/Office 1.unity
+    guid: d85017df584ca3848a767f80f84f8b17
+  - enabled: 1
+    path: Assets/_Yumiwa/Archive/Office.unity
+    guid: 63bcc1ba07955264d80fd4b00f9f287b
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 40f2683c00dfa624cbdac98be45deba3, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_UseUCBPForAssetBundles: 0

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f3fd04740059c46bff9387ef01e93e, type: 3}
+  m_Name: B1_Act1Definition
+  m_EditorClassIdentifier: Yumiwa.Infrastructure::Yumiwa.Infrastructure.Act1DefinitionAsset
+  MissionId: M01_Alley
+  Chapter: 1
+  EnterObjectiveId: b1_enter
+  EnterDescription: Masuki TKP di gang.
+  ObserveObjectiveId: b1_observe
+  ObserveDescription: 'Dokumentasikan 3 bukti: putar, zoom, examine.'
+  DeduceObjectiveId: b1_deduce
+  DeduceDescription: Susun rekonstruksi kejadian (tombol N).
+  EvidenceIds:
+  - b1_body
+  - b1_scratch
+  - b1_blood
+  DeductionEvidenceId: ev_b1_deduction
+  CaseId: case_b1

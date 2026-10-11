@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4b57c4bb6915e49b66a9e88eaedb89, type: 3}
+  m_Name: B1_EvidenceDeduction
+  m_EditorClassIdentifier: Yumiwa.Infrastructure::Yumiwa.Infrastructure.EvidenceData
+  EvidenceId: ev_b1_deduction
+  DisplayName: 'Deduksi: Kepanikan Pelaku'
+  Description: Rangkaian bukti menunjukkan pelaku kehilangan kendali.
+  Hotspot: 
+  Fact: Pelaku kehilangan kendali dan melarikan diri terburu-buru.
+  Dependency: b1_body,b1_scratch,b1_blood
+  Consequence: "Bab 1 selesai \u2014 kasus berlanjut."
+  Type: 0
+  Category: 0

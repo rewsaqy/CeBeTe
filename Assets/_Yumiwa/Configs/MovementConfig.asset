@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43689facf81e7d743906c6638a42b11f, type: 3}
+  m_Name: MovementConfig
+  m_EditorClassIdentifier: Yumiwa.Infrastructure::Yumiwa.Infrastructure.MovementConfig
+  WalkSpeed: 5
+  SprintMultiplier: 1.6
+  JumpHeight: 0.8
+  Gravity: -20
+  TurnSpeed: 25
+  LookMaxDegreesPerFrame: 5
+  GroundStickForce: 2
+  TerminalVelocity: -30
+  FaceTurnSpeed: 15
+  StandEyeHeight: 1.6
+  EyeHeightSpeed: 4
+  GroundAccel: 60
+  GroundDecel: 48
+  AirAccel: 18
+  AirDrag: 0.4
+  CoyoteSeconds: 0.12
+  JumpBufferSeconds: 0.15
+  JumpCutMultiplier: 0.45
+  WaterMoveMultiplier: 0.5
+  WaterJumpMultiplier: 0.7
+  WaterGravityMultiplier: 0.45
+  SprintFovBoost: 2
+  AirFovBoost: 5
+  FovLerpSpeed: 2
+  HeadBobAmplitude: 0.035
+  HeadBobFreqWalk: 2
+  HeadBobFreqSprint: 1
+  LandDipDepth: 0.16
+  StrafeTiltDegrees: 0
+  SlopeSnapDistance: 0.45
+  LandDipMinFallSpeed: 3.5
+  StaminaCostSprint: 3
+  StaminaCostCrouch: 1
+  StaminaCostJump: 5
+  CrouchSpeedMultiplier: 0.55
+  LimitedJumpOnlyAtObstacle: 1
+  JumpObstacleCheckDistance: 1.2

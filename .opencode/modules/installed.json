@@ -1,0 +1,52 @@
+{
+  "core": {
+    "version": "0.6.0",
+    "status": "installed",
+    "timestamp": "2026-09-08T10:09:57.807Z",
+    "files": [
+      "agents/creative-director.md",
+      "agents/producer.md",
+      "agents/technical-director.md",
+      "commands/architecture-decision.md",
+      "commands/concept-brainstorm.md",
+      "commands/create-architecture.md",
+      "commands/help.md",
+      "commands/init-template.md",
+      "commands/map-systems.md",
+      "commands/project-stage-detect.md",
+      "commands/setup-engine.md",
+      "commands/start.md",
+      "docs/context-management.md",
+      "docs/coordination-rules.md",
+      "docs/director-gates.md",
+      "docs/workflow-catalog.yaml",
+      "plugins/ccgs-hooks.ts",
+      "plugins/changelog-generator.ts",
+      "plugins/drift-detector.ts",
+      "skills/architecture-decision/SKILL.md",
+      "skills/concept-brainstorm/SKILL.md",
+      "skills/create-architecture/SKILL.md",
+      "skills/gate-check/SKILL.md",
+      "skills/help/SKILL.md",
+      "skills/init-template/SKILL.md",
+      "skills/map-systems/SKILL.md",
+      "skills/project-stage-detect/SKILL.md",
+      "skills/setup-engine/SKILL.md",
+      "skills/start/SKILL.md"
+    ],
+    "mcp": []
+  },
+  "engine-unity": {
+    "version": "0.6.0",
+    "status": "installed",
+    "timestamp": "2026-09-08T10:09:57.815Z",
+    "files": [
+      "agents/unity-addressables-specialist.md",
+      "agents/unity-dots-specialist.md",
+      "agents/unity-shader-specialist.md",
+      "agents/unity-specialist.md",
+      "agents/unity-ui-specialist.md"
+    ],
+    "mcp": []
+  }
+}

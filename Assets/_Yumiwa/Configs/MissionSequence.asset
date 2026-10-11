@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a77bfd8529f828845b8deb8be9deba55, type: 3}
+  m_Name: MissionSequence
+  m_EditorClassIdentifier: Yumiwa.Infrastructure::Yumiwa.Infrastructure.MissionSequenceAsset
+  missions:
+  - MissionId: M01_Alley
+    DisplayName: Jejak Darah Pertama
+    Description: 
+    Chapter: 1
+  - MissionId: M02_Motel
+    DisplayName: Pembunuhan di Motel
+    Description: 
+    Chapter: 2
+  - MissionId: M03_Witness
+    DisplayName: Saksi yang Selamat
+    Description: 
+    Chapter: 3
+  - MissionId: M04_Fog
+    DisplayName: Wajah di Tengah Kabut
+    Description: 
+    Chapter: 4
+  - MissionId: M05_House
+    DisplayName: Rumah Tanpa Jalan Keluar
+    Description: 
+    Chapter: 5

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d593c29e26b04ee9a64b1c0588838256, type: 3}
+  m_Name: InspectionConfig
+  m_EditorClassIdentifier: Yumiwa.Infrastructure::Yumiwa.Infrastructure.InspectionConfig
+  Smoothing: 12
+  MinPitch: -60
+  MaxPitch: 60
+  MinDistance: 0.35
+  MaxDistance: 2
+  DefaultDistance: 0.9
+  MouseDegreesPerPixel: 0.35
+  StickDegreesPerSecond: 200
+  MouseZoomStep: 0.12
+  PadZoomRate: 1.2
+  InspectionLayerName: Inspection
